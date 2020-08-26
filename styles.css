@@ -1,0 +1,81 @@
+html, body {
+		margin: 0;
+		height: 100%;
+}
+
+body {
+	background-color: #f48c5c; 
+}
+
+p {
+	font-size: 100px;
+}
+
+#topP {
+	color: #FFFFFF;
+	text-align: left;
+}
+
+#bottomP {
+	margin-top: 200px;
+	margin-left: 0px;
+
+}
+
+#topPDiv {
+	margin: 0 auto;
+}
+
+div > p {
+	font-size: 40px;
+	/*float: left;*/
+	color: #FFFFFF;
+	width: 1000px;
+}
+
+h1{
+	font-size: 200px;
+	color: #FFFFFF;
+	float: left;
+}
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #bc3c5c;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+
+}
+
+.sidebar a {
+	padding: 10px 8px 10px 16px;
+	text-decoration: none;
+	font-size: 50px;
+	color: #6c2c73;
+	display: block;
+	text-align: center;
+
+}
+
+.sidebar a:hover {
+	color: #fcec6c;
+}
+
+.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 1000px;
+}
+
+img {
+	max-width: 50%;
+	max-height: 50%;
+	height: auto;
+	float: right;
+	width: auto;
+	margin-right: 200px;
+	margin-top: 50px;
+}
