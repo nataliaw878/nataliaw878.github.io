@@ -1,10 +1,44 @@
 html, body {
-		margin: 0;
-		height: 100%;
+	margin: 0;
+	height: 100%;
 }
 
-body {
+.flex-grid {
+	display: flex;
+	margin: auto -1rem 1rem;
+}
+
+.container{
+	margin: auto;
 	background-color: #f48c5c; 
+	flex-shrink: 0;
+	flex-direction: column;
+}
+
+.sidebar {
+	flex: 1;
+}
+
+.main {
+	flex: 7;
+}
+
+.title {
+	position: relative;
+	padding: 0px 5px;
+}
+
+.photo {
+	padding: 0px;
+}
+
+img {
+	max-width: 35%;
+	max-height: 35%;
+	height: auto;
+	float: right;
+	width: auto;
+	margin-right: 20px;
 }
 
 p {
@@ -28,54 +62,33 @@ p {
 
 div > p {
 	font-size: 40px;
-	/*float: left;*/
 	color: #FFFFFF;
 	width: 1000px;
 }
 
 h1{
-	font-size: 200px;
+	font-size: 80px;
 	color: #FFFFFF;
-	float: left;
+	margin: 0 auto;
 }
 
 .sidebar {
 	margin: 0;
 	padding: 0;
-	width: 200px;
+	width: 110px;
 	background-color: #bc3c5c;
-	position: fixed;
-	height: 100%;
 	overflow: auto;
-
 }
 
 .sidebar a {
 	padding: 10px 8px 10px 16px;
 	text-decoration: none;
-	font-size: 50px;
+	font-size: 25px;
 	color: #6c2c73;
 	display: block;
 	text-align: center;
-
 }
 
 .sidebar a:hover {
 	color: #fcec6c;
-}
-
-.content {
-	margin-left: 200px;
-	padding: 1px 16px;
-	height: 1000px;
-}
-
-img {
-	max-width: 50%;
-	max-height: 50%;
-	height: auto;
-	float: right;
-	width: auto;
-	margin-right: 200px;
-	margin-top: 50px;
 }
