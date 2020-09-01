@@ -11,11 +11,13 @@ html, body {
 
 .container{
 	margin: auto;
-	background-color: #f48c5c; 
+	background-color: #f48c5c;
+	min-height: 100%;
 }
 
 .sidebar {
 	flex: 1;
+	flex-shrink: 0;
 }
 
 .main {
@@ -55,21 +57,10 @@ html, body {
 	margin-top: 20px;
 	margin-left: 5px;
 	font-size: 30px;
-
+	color: #FFFFFF;
 }
 
 #topPDiv {
-	margin: 0 auto;
-}
-
-div > p {
-	font-size: 40px;
-	color: #FFFFFF;
-}
-
-.title > h1{
-	font-size: 140px;
-	color: #FFFFFF;
 	margin: 0 auto;
 }
 
@@ -93,3 +84,21 @@ div > p {
 .sidebar a:hover {
 	color: #fcec6c;
 }
+
+.title > h1{
+	font-size: 140px;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+.contact {
+	font-size: 40px;
+	color: #FFFFFF;
+	margin: 0 auto;
+	padding-left: 40px;
+}
+
+/*@media only screen and (max-width: 320px){
+	.title > h1 {
+		font-size: 2em;
+	}
+}*/
