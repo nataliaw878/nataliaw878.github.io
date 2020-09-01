@@ -1,18 +1,17 @@
 html, body {
 	margin: 0;
 	height: 100%;
+	width: 100%
 }
 
-.flex-grid {
+.main-flex-grid {
 	display: flex;
-	margin: auto -1rem 1rem;
+	margin: auto;
 }
 
 .container{
 	margin: auto;
 	background-color: #f48c5c; 
-	flex-shrink: 0;
-	flex-direction: column;
 }
 
 .sidebar {
@@ -24,35 +23,38 @@ html, body {
 }
 
 .title {
-	position: relative;
-	padding: 0px 5px;
+	flex: 2;
+	padding: 0px 15px;
 }
 
 .photo {
-	padding: 0px;
+	flex: 2;
+	padding: 10px;
 }
 
-img {
-	max-width: 35%;
-	max-height: 35%;
+.title-flex-grid{
+	display: flex;
+	margin: auto;
+}
+
+.photo > img {
+	max-width: 90%;
 	height: auto;
-	float: right;
-	width: auto;
-	margin-right: 20px;
 }
 
-p {
-	font-size: 100px;
-}
-
-#topP {
+#welcome {
 	color: #FFFFFF;
 	text-align: left;
+	padding-left: 5px;
+	padding-top: 50px;
+	margin: 0;
+	font-size: 50px;
 }
 
 #bottomP {
-	margin-top: 200px;
-	margin-left: 0px;
+	margin-top: 20px;
+	margin-left: 5px;
+	font-size: 30px;
 
 }
 
@@ -63,11 +65,10 @@ p {
 div > p {
 	font-size: 40px;
 	color: #FFFFFF;
-	width: 1000px;
 }
 
-h1{
-	font-size: 80px;
+.title > h1{
+	font-size: 140px;
 	color: #FFFFFF;
 	margin: 0 auto;
 }
